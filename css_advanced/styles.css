@@ -1,0 +1,9 @@
+* {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.inline {
+    display: flex;
+    content: fill;
+}
