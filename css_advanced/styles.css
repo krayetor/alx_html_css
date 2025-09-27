@@ -1,9 +1,46 @@
 * {
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-family: 'Source-Sans-Pro';
+    justify-content: space-evenly;
+    padding: 0px;
 }
 
 .inline {
     display: flex;
     content: fill;
+    justify-content: space-between;
+}
+
+.hero {
+    background-color: #071629;
+    align-items: center;
+    padding: 10px;
+    color: white;
+} 
+
+.quote {
+    background-color: #C271FF;
+    padding: 10px;
+}
+
+.tutorials {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.membership {
+    background-color: #071629;
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #071629;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.faqs {
+    padding: 10px;
 }
