@@ -1,0 +1,237 @@
+header {
+    margin: 0;
+    background-image: url(media/background-hero.png);
+    background-position: no-repeat;
+    background-size: cover;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 16px 32px;
+    gap: auto;
+}
+
+form {
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background-color: none;
+    max-width: 200px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.footer {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+footer {
+    height: 30vh;
+    background-image: url(media/footer_background.png);
+    align-items: center;
+    padding: 16px 24px;
+    display: grid;
+}
+
+.white {
+    color: #fff;
+}
+
+.button {
+    color: white;
+    background-color: #FF6565;
+    padding: 8px 16px;
+    border-color: none;
+    border-radius: 30px;
+}
+
+.contact {
+    height: 40vh;
+    border-radius: 8px;
+    margin: 20;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    padding: 0px;
+    display: grid;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: auto;
+    font-family: 'Sans Source Pro', Geneva;
+}
+
+.cards {
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+}
+
+.our-results {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    gap: auto;
+    color: white;
+    display: grid;
+    padding: 16px 32px;
+    background-image: url(media/background-our-results.png);
+}
+
+.what-we-do {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    gap: auto;
+    display: grid;
+    padding: 16px 32px;
+}
+
+.content {
+    text-align: center;
+    margin: 100px 0;
+    gap: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 8px 16px;
+    background-color: none;
+    /* margin-top: 5px; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF6565;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.we-do {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-btn {
+    background: #FF6565;
+    border: none;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    color: #FFffff;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 1em;
+    transition: opacity 0.3s;
+}
+
+.cta-btn:hover, .cta-btn:active {
+    opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: #111;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        overflow: hidden;
+
+        max-height: 0;
+        opacity: 0;
+        transition: al 0.4s ease;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        z-index: 999;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 999;
+    }
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
